@@ -1,0 +1,100 @@
+// adaptive content block for image based layouts
+
+.adaptive-content {
+	padding: $gutter-small $gutter-big 0;
+
+	h1 {
+		+ .feature-description {
+			padding-bottom: $gutter-big;
+			border-bottom: $border-width-thin solid $color-grey;
+		}
+	}
+
+	h2 {
+		padding-top: $gutter-big;
+		color: $color-dark-gray;
+
+		+ .feature-description {
+			padding-bottom: $gutter-big;
+			font-size: $font-size-small;
+		}
+	}
+
+	article {
+		padding-bottom: $gutter-big;
+	}
+
+	.image-container-small {
+		margin-left: $gutter-small;
+		margin-bottom: $gutter-small;
+	}
+
+	img {
+		@include stretch-image();
+	}
+}
+
+// Tablet...
+@media screen and (min-width: $breakpoint-mobile) {
+	.adaptive-content {
+		// 50:50 layout
+		.large-6 {
+			.image-container {
+				max-height: 320px; // gmap height
+				overflow: hidden;
+			}
+
+			&:first-of-type {
+				.image-container {
+					margin-right: ($gutter-small / 2);
+					margin-bottom: $gutter-small;
+				}
+			}
+
+			&:last-of-type {
+				.image-container {
+					margin-bottom: $gutter-small;
+					margin-left: ($gutter-small / 2);
+				}
+			}
+		}
+
+		// 33:33:33 layout
+		.large-12 {
+			display: flex;
+			margin: 0 -($gutter-small / 2);
+
+			.image-container {
+				margin: ($gutter-small / 2);
+				margin-bottom: $gutter-small;
+			}
+		}
+	}
+}
+
+// Phone
+@media screen and (max-width: $breakpoint-mobile-only) {
+	.adaptive-content {
+		padding-right: $gutter-small;
+		padding-left: $gutter-small;
+
+		h2 {
+			padding-top: $gutter-small;
+			font-size: $font-size-big;
+
+			+ .feature-description {
+				font-size: $font-size-xsmall;
+			}
+		}
+
+		article {
+			&:last-of-type {
+				padding-bottom: 0;
+			}
+		}
+
+		.image-container {
+			margin: 0 0 $gutter-small 0;
+		}
+	}
+}

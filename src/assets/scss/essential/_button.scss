@@ -1,0 +1,48 @@
+// Buttons
+
+// Floating Action Button taken from material-design
+// https://material.io/guidelines/components/buttons-floating-action-button.html
+.fab {
+	display: block;
+	width: $fab-size-default;
+	height: $fab-size-default;
+	z-index: 10;
+
+	cursor: pointer; // for desktop at least
+	border-radius: 50%;
+	background-color: $color-white;
+	box-shadow: $floating-action-box-shadow;
+}
+
+.button {
+	cursor: pointer;
+	display: inline-block;
+	height: $default-block-height;
+	line-height: $default-block-height;
+	padding: 0 12px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: $font-size-xsmall;
+	font-weight: $text-medium;
+	color: $color-white;
+	border-radius: $border-radius;
+	transition: background-color $animation-linear-default;
+	background-color: $color-dark-blue;
+
+	&:hover {
+		color: $color-white; // default <a> override
+		background-color: shade($color-dark-blue, 20%);
+	}
+}
+
+@media screen and (max-width: $breakpoint-desktop-only) {
+	.button {
+		// shrink buttons for handheld devices
+		&.button-handheld-mini {
+			height: $small-block-height;
+			line-height: $small-block-height;
+			font-size: $font-size-xxsmall;
+		}
+	}
+}

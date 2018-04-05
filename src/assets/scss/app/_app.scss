@@ -1,0 +1,62 @@
+// app css
+// common rules
+// and some app specific things that won't be used alone
+
+
+$logo-size: 28px !default;
+
+body {
+	background-color: $color-white;
+}
+
+.container {
+	padding-bottom: $horizontal-panel-height; // footer height
+}
+
+// logo
+.home-button {
+	position: fixed;
+	top: $gutter-small;
+	left: $gutter-small;
+}
+
+.birdnest-logo {
+	display: block;
+	width: $logo-size;
+	height: $logo-size;
+	margin: 6px auto;
+
+	background-repeat: no-repeat;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADpUlEQVR4Ae2ZA6wsVxiA+65V23Ybq0Ftt3Eas1ZQ2zbCBrUVPttrjG2v8XB6Tns2ebz3rneaTfJd4/vO/DNzsnMIACDUDAP6RTqybmp4BHpFsVQZCW1AsVg8d+26DWtCF1CpeSOiZj7+xrsflO++/RYQqoBaJbg4Sqvg3Y8/A0j+4UcfCkeAHYBRLai/iuQbvP/Vj+Dpp18Y/ADFLF1K8EE6QmL5PVi5asNgBziV3H1Y9oBwgj14AVBsiR54x5l5/6/55BFZRhuYACQ+AhlTg+Kte0qik/WX5fEDB/BK/wPQikMmCMk6VvZyX+wpuI2QwQ9/bwCrIvwBA0ihj0cAi49BDmP13DWUGpBIarFEIKzShwAsPgqZgZwomvnXUpxRR1LNsJ1SgGwYvQ3Acz4NOSYtmFdSirN5GykhoabZSihAs/3eBeBxOQJyPqO6z6Q4LYdEWmVzVga6m+t+AB6ZSchJacG4jla9jRFCxCJtBGRUoDuF7gbgWZ+DnMsozntpQSv+ewJSStsBW7MaMNyC27UAdGmEHE2o3vVZ1U1G0GWRlLFA+2wmdOD4O6OdDNjzCjObYLWzKMP7MsEbta1wZLZ3UB6xjTKA6dZ+70gAlp5A4pDjKNm6h1Ucfhstga2E1HF5RIy1gOlUPmwrAK/4OJ7zk1O8fhmjWH+kGGnXf5c6sTHvHScpuMCwK4+0HNDYAuBL4wWk7LyQFk2vNaHmYfQAWH7pxnYCxiBHEpJ1Ba3aG5KsBkdF6ok8OqqqV5HtoDzWUgC6o8ZZfU72Sk8mBLPYuLX3avXjtAK8fOnR+RznHR1e906UneKK1gTaX31KNgPLLx7WdAAaG9bM3ZgSLacP8jhABLbnvIGmoJkAJD9Fqc77UUrZ1S95dDkmFbOqO85JaBIWHUCr9nRGMNZFaTznfSJGSUA23Q8aq7/ogH5K7zn7kp1bRsrWFHJqNmA2wxur+xYA5WnRTNOydQQanVYCRiAnJTj9Dlp1n2dN7w9WD4KEYHRfnlEBpdgSKzunI/m2Xp3e8w8EhfqYV6hdq9j5bwjJtpKcvjvW1EhA8Gigj7fj93vvdzTAGq5muMUzG3O/WJrdyM2mBONYVvduZ3T/NVpx/yQki2xj5XdmjcDh/NIWxS9c3Kw8otWt9EhjZzrfz6LXeg708R5/62jINP5bS/r8gKP5gKYYBjRBrVqeDXWA7zmTYQ8Y/b+cA/U9Pt4dugBJEEcDrzA1fFI/DBgGdI9/AMWzEUAe3oGfAAAAAElFTkSuQmCC);
+	background-size: $logo-size $logo-size;
+	background-position: center center;
+
+	transition: 3s;
+
+	&:hover {
+		transition: 3s;
+		transform: rotate(360deg);
+	}
+}
+
+// sooo tiny component I wouldn't even put it into a separate file
+.handheld-textbox {
+	margin: $gutter-small;
+	padding: $gutter-default;
+	background-color: $color-light-blue;
+	border-radius: $border-radius;
+
+	p {
+		font-size: $font-size-small;
+	}
+}
+
+// Tablet + up
+@media screen and (min-width: $breakpoint-desktop) {
+	// hide button behaviour
+	.home-button {
+		position: absolute; // scroll with the header
+		left: ($gutter-small * 2);
+		box-shadow: none;
+	}
+}

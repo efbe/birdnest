@@ -1,0 +1,112 @@
+// carousel app
+// styles for vue-carousel plugin
+// awesome markup!
+
+$dot-size: 20px !default;
+
+.VueCarousel {
+	border-bottom: 30px solid $color-white; // slot for bottom nav
+	background-color: $color-white; // in case the width cannot be computed pixel perfectly
+
+	> div {
+		max-height: 500px; // need a proper height for flexbox
+		overflow: hidden; // hide other images
+	}
+
+	&-slide {
+		img {
+			@include stretch-image();
+			cursor: grab; // you can grab images to slide
+		}
+	}
+
+	// reset everything for the pagination
+	&-pagination {
+		position: absolute;
+		bottom: -40px; // magic number
+		height: 40px;
+		max-height: none;
+		text-align: right !important;
+	}
+
+	// I rather style this from css w/ !important than inline
+	&-dot {
+		margin-top: 0 !important;
+	}
+
+	&-dot-inner {
+		width: $dot-size !important;
+		height: $dot-size !important;
+		background-color: $color-white !important;
+		box-shadow: $floating-action-box-shadow;
+	}
+
+	&-dot--active {
+		.VueCarousel-dot-inner {
+			background-color: $color-dark-blue !important;
+		}
+	}
+}
+
+// nav panel
+.carousel-content {
+	position: relative;
+
+	.nav-panel {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+
+		.button {
+			margin-bottom: -($gutter-small / 2);
+		}
+	}
+}
+
+// Tablet + up
+@media screen and (min-width: $breakpoint-desktop) {
+	.carousel-content {
+		.nav-panel {
+			left: auto;
+			right: 0;
+			width: 100%;
+			height: 0;
+			overflow: hidden;
+
+			text-align: right;
+			background-color: $color-white-transparent;
+			transition: height $animation-ease-slow;
+
+			.button {
+				margin: 10px;
+			}
+		}
+
+		&:hover {
+			.nav-panel {
+				height: $horizontal-panel-height;
+			}
+		}
+	}
+
+	.VueCarousel {
+		border-bottom: 0;
+
+		&-pagination {
+			top: $gutter-small;
+			bottom: auto; // reset
+			right: -30px;
+			height: auto;
+		}
+
+		&-dot {
+			float: none !important;
+			padding-bottom: ($dot-size / 4) !important;
+		}
+
+		&-dot-inner {
+			width: ($dot-size / 2) !important;
+			height: ($dot-size / 2) !important;
+		}
+	}
+}

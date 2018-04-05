@@ -1,0 +1,100 @@
+// Variables - colors, typo, units, etc...
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:700|Raleway:400,500');
+
+// Typo / Sizes
+// TODO: clean up what you don't use
+
+$font-size-xxsmall:  10px !default;
+$font-size-xsmall:   12px !default;
+$font-size-small:    14px !default;
+$font-size-default:  16px !default;
+$font-size-big:      18px !default;
+$font-size-large:    24px !default;
+$font-size-xlarge:   28px !default;
+$font-size-xxlarge:  36px !default;
+$font-size-xxxlarge: 48px !default;
+
+
+// Typo / Weights
+// https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight#Common_weight_name_mapping
+
+$text-extra-light: 200 !default;
+$text-light:       300 !default;
+$text-regular:     400 !default;
+$text-medium:      500 !default;
+$text-semi-bold:   600 !default;
+$text-bold:        700 !default;
+
+
+// Typo / Families
+
+$font-dancing-script: "Dancing Script", sans-serif !default;
+$font-raleway:        "Raleway", sans-serif !default;
+
+
+// Typo / Misc
+
+$default-line-height: 150% !default;
+$default-line-height-decimal: 1.5 !default; // can be useful if you want to multiply a unit with 'px' value
+
+
+// Screen size breakpoints - taken from Zurb's Foundation
+
+$breakpoint-mobile-only:  39.9375em !default;
+$breakpoint-desktop-only: 63.9375em !default;
+$breakpoint-mobile:       40em !default;
+$breakpoint-desktop:      64em !default;
+
+
+// Colors & Transparency (alphabetically)
+
+$half-transparent: 0.5 !default;
+
+$color-dark-blue:         rgb(61, 111, 153) !default;
+$color-dark-gray:         rgb(88, 88, 88) !default;
+$color-grey:              rgb(228, 228, 228) !default;
+$color-light-blue:        rgb(207, 219, 229) !default;
+$color-silk:              rgb(37, 37, 37) !default;
+$color-white:             rgb(255, 255, 255) !default;
+$color-white-transparent: rgba(255, 255, 255, $half-transparent) !default;
+$color-white-opaque:      rgba(255, 255, 255, 0.7) !default;
+
+
+
+// Gutters & Block heights - Need some list of rules otherwise no consistency
+
+$gutter-small:   10px !default;
+$gutter-default: 20px !default;
+$gutter-big:     30px !default;
+
+$small-block-height:   $gutter-big !default;
+$default-block-height: 40px !default;
+
+$fab-size-default: $default-block-height !default;
+
+
+// Misc design stuff & dimensions
+
+$border-radius: 2px !default;
+$border-radius-circle: 50% !default;
+$border-width-thin: 1px !default;
+$border-width-default: 2px !default;
+$border-width-thick: $gutter-small !default;
+
+$animation-time-default: 200ms !default;
+$animation-time-slow:    500ms !default;
+$animation-linear-default: $animation-time-default linear !default;
+$animation-linear-slow: $animation-time-slow linear !default;
+$animation-ease-default: $animation-time-default ease !default;
+$animation-ease-slow: $animation-time-slow ease !default;
+
+// Shadows taken from Material design
+$floating-action-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2) !default;
+$panel-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12) !default;
+$horizontal-panel-box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.14);
+
+
+// Panel widths
+$nav-panel-width: 200px !default;
+$horizontal-panel-height: 60px !default;

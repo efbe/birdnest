@@ -1,0 +1,42 @@
+// header.scss
+// header: navigation + logo
+
+
+$footer-height: $horizontal-panel-height;
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0; // stays when sidebar is open
+	height: $footer-height;
+	width: 100%;
+	line-height: $footer-height;
+	z-index: 10;
+	padding: 0 $gutter-small;
+
+	text-align: right;
+	background-color: $color-white;
+	transition: left $animation-ease-default;
+	box-shadow: $horizontal-panel-box-shadow;
+
+	p {
+		float: left;
+		line-height: $footer-height;
+		font-size: $font-size-small;
+		color: $color-silk;
+	}
+
+	.button {
+		margin-top: 10px;
+		float: right;
+	}
+}
+
+// Small screen only
+@media screen and (max-width: $breakpoint-mobile-only) {
+	footer {
+		p {
+			font-size: 10px;
+		}
+	}
+}

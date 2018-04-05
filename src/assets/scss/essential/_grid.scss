@@ -1,0 +1,57 @@
+// Grid
+// very very very... very simple responsive grid "system"
+// and by simple I mean the gutters will be handled by the enclosed elements
+// not the grid itself
+
+$grid-count: 12 !default;
+
+.row {
+	display: flex; // why not?...
+	@include clear();
+}
+
+.col {
+	float: left;
+	min-height: 1px;
+
+	// default col widths (bigger than mobile handheld)
+	&.large-2  { width: percentage(2 / $grid-count); }
+	&.large-3  { width: percentage(3 / $grid-count); }
+	&.large-4  { width: percentage(4 / $grid-count); }
+	&.large-6  { width: percentage(6 / $grid-count); }
+	&.large-8  { width: percentage(8 / $grid-count); }
+	&.large-9  { width: percentage(9 / $grid-count); }
+	&.large-10 { width: percentage(10 / $grid-count); }
+	&.large-12 {
+		float: none;
+		width: 100%;
+	}
+}
+
+
+// Tablet
+@media screen and (max-width: $breakpoint-desktop-only) {
+	.col {
+		&.small-4  { width: percentage(4 / $grid-count); }
+		&.small-6  { width: percentage(6 / $grid-count); }
+		&.small-8  { width: percentage(8 / $grid-count); }
+		&.small-12 {
+			float: none;
+			width: 100%;
+		}
+	}
+}
+
+// Phone
+@media screen and (max-width: $breakpoint-mobile-only) {
+	.row {
+		display: block; // flex reset for tiny screens
+	}
+
+	.col {
+		&.mini-12 {
+			float: none;
+			width: 100%;
+		}
+	}
+}

@@ -1,0 +1,87 @@
+// main navigation related things
+
+
+// TODO: if you need it somewhere else put it into _variables
+$side-menu-item-height: 60px !default;
+
+// body & content parts that are only required for the slide layout
+body {
+	overflow: hidden;
+	overflow-y: auto;
+	position: relative;
+	left: 0;
+
+	transition: left $animation-ease-default;
+
+	&.nav-open {
+		left: -$nav-panel-width;
+	}
+}
+
+// content w/ menu
+.page-content {
+	transition: all $animation-ease-slow; // all -> height, opacity
+}
+
+// toggle button
+.toggle-menu {
+	position: absolute;
+	top: $gutter-small;
+	left: -50px;
+}
+
+// the nav panel
+.main-nav {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: -$nav-panel-width;
+	width: $nav-panel-width;
+	transition: right $animation-ease-default; // yeah, I know it jumps @ close
+
+	background-color: $color-white;
+	box-shadow: $panel-box-shadow;
+}
+
+// fix menu position
+.nav-open {
+	.main-nav {
+		position: fixed;
+		right: 0;
+	}
+}
+
+.side-menu {
+	padding: 7px 15px 15px;
+
+	li {
+		display: block;
+		height: $side-menu-item-height;
+		line-height: $side-menu-item-height;
+
+		// this could be a common module with the header
+		a {
+			color: $color-silk;
+			position: relative; // need this for the link, otherwise it's junk
+
+			@include animated-link(
+				$bottom-position: 0,
+				$height: $border-width-thin,
+				$background-color: $color-silk
+			);
+
+			&.router-link-exact-active {
+				&:before {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+// Tablet + up
+@media screen and (min-width: $breakpoint-desktop) {
+	.main-nav {
+		display: none; // We use the header instead
+	}
+}

@@ -1,0 +1,25 @@
+// "birdnest" SCSS app config
+
+// Vars - this has to be the first
+@import 'essential/_variables';
+
+@import 'essential/_mixins';
+@import 'essential/_reset';
+@import 'essential/_utilities';
+@import 'essential/_grid';
+@import 'essential/_typo';
+@import 'essential/_button';
+
+// Plugins
+@import 'plugin/_hamburger';
+
+// The main app - global things
+@import 'app/_app';
+
+// Components - major UI chunks
+@import 'component/_menu';
+@import 'component/_header';
+@import 'component/_footer';
+@import 'component/_carousel';
+@import 'component/_birdie-panel';
+@import 'component/_adaptive-content';

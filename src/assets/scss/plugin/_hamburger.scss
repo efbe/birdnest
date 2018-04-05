@@ -1,0 +1,27 @@
+// hamburger.scss
+// really minimal hamburger component
+// TODO: add some inner box shadow for the bars
+
+.hamburger {
+	i {
+		background-color: $color-light-blue;
+		border-radius: $border-radius;
+		content: ' ';
+		display: block;
+		width: 20px;
+		height: 4px;
+		margin: 0 auto;
+	}
+
+	i:nth-child(2) {
+		margin-top: 4px;
+		margin-bottom: 4px;
+	}
+}
+
+// FAB plugin
+.fab {
+	i:nth-child(1) {
+		margin-top: 10px;
+	}
+}

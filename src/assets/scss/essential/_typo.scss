@@ -1,0 +1,53 @@
+// Typograhic elements
+
+body {
+	font-family: $font-raleway;
+}
+
+p {
+	line-height: $default-line-height;
+	font-size: $font-size-default;
+	font-weight: $text-light;
+	color: $color-silk;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	li {
+		line-height: $default-line-height;
+		font-size: $font-size-default;
+		font-weight: $text-light;
+		color: $color-silk;
+	}
+}
+
+
+h1, h3, h4, h5, h6 {
+	line-height: $default-line-height;
+	font-family: $font-dancing-script;
+	color: $color-silk;
+}
+
+h1 {
+	font-weight: $text-bold;
+	font-size: $font-size-xxlarge;
+}
+
+h2 {
+	line-height: $default-line-height;
+	font-weight: $text-bold;
+	font-family: $font-raleway;
+	font-size: $font-size-large;
+	color: $color-silk;
+}
+
+strong {
+	font-weight: $text-medium;
+}
+
+.feature-description {
+	color: $color-dark-gray;
+}

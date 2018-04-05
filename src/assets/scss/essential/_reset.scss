@@ -1,0 +1,43 @@
+// reset.scss
+// I'm gonna mess with Eric's stuff now a little bit
+// Wonder what'll left of it when I'm through…
+// @info http://meyerweb.com/eric/tools/css/reset/
+
+$value-zero: 0 !default;
+$value-none: none !default;
+
+// this comes from twbs' bootstrap
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, pre,
+a, code, em, img, small, strong, sub, sup,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, footer, header,
+menu, nav, section, audio, video {
+	margin: $value-zero;
+	padding: $value-zero;
+	vertical-align: baseline;
+}
+
+
+// HTML5 display-role reset for older browsers
+article, aside, details,
+footer, header, menu, nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+input {
+	@include user-select($value-none);
+}

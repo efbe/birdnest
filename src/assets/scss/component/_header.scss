@@ -1,0 +1,73 @@
+// top navigation, logo, main heading
+
+
+$header-height: $horizontal-panel-height !default;
+
+header {
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	transition: height $animation-ease-slow;
+	border-bottom: $border-width-thin solid $color-grey;
+
+	.header-menu {
+		display: none; // hide before transition
+		text-align: center;
+
+		li {
+			display: inline-block;
+			list-style-type: none;
+			padding: 0 ($header-height / 2);
+			line-height: $header-height;
+		}
+
+		a {
+			color: $color-silk;
+			position: relative; // need this for the link, otherwise it's junk
+
+			@include animated-link(
+				$bottom-position: 0,
+				$height: $border-width-thin,
+				$background-color: $color-silk
+			);
+
+			&.router-link-exact-active {
+				&:before {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+// h1 goes to the header in handheld view
+.menu-headline {
+	line-height: $header-height;
+	text-align: center;
+	font-size: $font-size-large;
+	border-bottom: $border-width-thin solid $color-grey;
+}
+
+// Tablet...
+@media screen and (min-width: $breakpoint-mobile) {
+	.menu-headline {
+		font-size: $font-size-xlarge;
+	}
+}
+
+// ...& up
+@media screen and (min-width: $breakpoint-desktop) {
+	.page-content {
+		top: $header-height;
+	}
+
+	header {
+		display: block;
+		height: $header-height;
+		background-color: $color-white;
+
+		.header-menu {
+			display: block;
+		}
+	}
+}

@@ -1,0 +1,62 @@
+// Some useful this & that
+
+// Sorry but has to be higher spec' than an ID
+// scss-lint:disable ImportantRule
+.hidden {
+	display: none !important;
+}
+
+// Typo helpers
+.all-caps {
+	text-transform: uppercase;
+}
+
+.text-right {
+	text-align: right;
+}
+
+// Oldskool clear fix
+.clear {
+	@include clear();
+}
+
+// Position utils
+.vertical-center {
+	@include vertical-center();
+}
+
+.horizontal-center {
+	@include horizontal-center();
+}
+
+.absolute-center {
+	@include absolute-center();
+}
+
+// Animation utils
+.fade-enter-active,
+.fade-leave-active {
+	transition: opacity $animation-ease-slow;
+}
+
+.fade-enter,
+.fade-leave-to {
+	opacity: 0;
+}
+
+// If you want to hide things for desktop or mobile
+.handheld-only {
+	display: none;
+}
+
+@media screen and (max-width: $breakpoint-desktop-only) {
+	.handheld-only {
+		display: block !important;
+	}
+}
+
+@media screen and (max-width: $breakpoint-desktop-only) {
+	.desktop-only {
+		display: none !important;
+	}
+}
