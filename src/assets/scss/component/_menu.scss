@@ -1,9 +1,6 @@
 // main navigation related things
 
 
-// TODO: if you need it somewhere else put it into _variables
-$side-menu-item-height: 60px !default;
-
 // body & content parts that are only required for the slide layout
 body {
 	overflow: hidden;
@@ -27,7 +24,7 @@ body {
 .toggle-menu {
 	position: absolute;
 	top: $gutter-small;
-	left: -50px;
+	left: -($fab-size-default + $gutter-small);
 }
 
 // the nav panel
@@ -52,12 +49,12 @@ body {
 }
 
 .side-menu {
-	padding: 7px 15px 15px;
+	padding: 0 $gutter-default;
 
 	li {
 		display: block;
-		height: $side-menu-item-height;
-		line-height: $side-menu-item-height;
+		height: $horizontal-panel-height;
+		line-height: $horizontal-panel-height;
 
 		// this could be a common module with the header
 		a {
