@@ -31,12 +31,3 @@ footer {
 		float: right;
 	}
 }
-
-// Small screen only
-@media screen and (max-width: $breakpoint-mobile-only) {
-	footer {
-		p {
-			font-size: 10px;
-		}
-	}
-}

@@ -71,3 +71,10 @@ header {
 		}
 	}
 }
+
+// Small screen only
+@media screen and (max-width: $breakpoint-mobile-only) {
+	.menu-headline {
+		font-size: $font-size-big;
+	}
+}

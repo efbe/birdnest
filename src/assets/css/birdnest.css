@@ -289,25 +289,27 @@ body {
 .side-menu {
   padding: 0 20px; }
   .side-menu li {
-    display: block;
-    height: 60px;
-    line-height: 60px; }
+    display: block; }
     .side-menu li a {
-      color: #252525;
-      position: relative;
-      white-space: nowrap; }
-      .side-menu li a:before {
-        content: ' ';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 0;
-        height: 1px;
-        background-color: #252525;
-        transition: width 200ms ease; }
-      .side-menu li a:hover:before {
-        width: 100%; }
-      .side-menu li a.router-link-exact-active:before {
+      display: block;
+      height: 60px;
+      line-height: 60px; }
+      .side-menu li a span {
+        color: #252525;
+        position: relative;
+        white-space: nowrap; }
+        .side-menu li a span:before {
+          content: ' ';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 0;
+          height: 1px;
+          background-color: #252525;
+          transition: width 200ms ease; }
+        .side-menu li a span:hover:before {
+          width: 100%; }
+      .side-menu li a.router-link-exact-active span:before {
         width: 100%; }
 
 @media screen and (min-width: 64em) {
@@ -366,6 +368,10 @@ header {
     header .header-menu {
       display: block; } }
 
+@media screen and (max-width: 39.9375em) {
+  .menu-headline {
+    font-size: 18px; } }
+
 footer {
   position: fixed;
   bottom: 0;
@@ -387,10 +393,6 @@ footer {
   footer .button {
     margin-top: 10px;
     float: right; }
-
-@media screen and (max-width: 39.9375em) {
-  footer p {
-    font-size: 10px; } }
 
 .VueCarousel {
   border-bottom: 30px solid white;

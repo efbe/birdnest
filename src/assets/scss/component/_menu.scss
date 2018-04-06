@@ -53,23 +53,29 @@ body {
 
 	li {
 		display: block;
-		height: $horizontal-panel-height;
-		line-height: $horizontal-panel-height;
 
 		// this could be a common module with the header
 		a {
-			color: $color-silk;
-			position: relative; // need this for the link, otherwise it's junk
+			display: block;
+			height: $horizontal-panel-height;
+			line-height: $horizontal-panel-height;
 
-			@include animated-link(
-				$bottom-position: 0,
-				$height: $border-width-thin,
-				$background-color: $color-silk
-			);
+			span {
+				color: $color-silk;
+				position: relative; // need this for the link, otherwise it's junk
+
+				@include animated-link(
+						$bottom-position: 0,
+						$height: $border-width-thin,
+						$background-color: $color-silk
+				);
+			}
 
 			&.router-link-exact-active {
-				&:before {
-					width: 100%;
+				span {
+					&:before {
+						width: 100%;
+					}
 				}
 			}
 		}

@@ -7,10 +7,10 @@
             </span>
         </a>
         <ul class="side-menu">
-            <li><router-link v-on:click.native="closeMenu()" to="/">Home</router-link></li>
-            <li><router-link v-on:click.native="closeMenu()" to="/about">The Nest</router-link></li>
-            <li><router-link v-on:click.native="closeMenu()" to="/nearby">Things to do nearby</router-link></li>
-            <li><router-link v-on:click.native="closeMenu()" to="/contact">Contact us</router-link></li>
+            <li><router-link v-on:click.native="closeMenu()" to="/"><span>Home</span></router-link></li>
+            <li><router-link v-on:click.native="closeMenu()" to="/about"><span>The Nest</span></router-link></li>
+            <li><router-link v-on:click.native="closeMenu()" to="/nearby"><span>Things to do nearby</span></router-link></li>
+            <li><router-link v-on:click.native="closeMenu()" to="/contact"><span>Contact us</span></router-link></li>
         </ul>
     </nav>
 
