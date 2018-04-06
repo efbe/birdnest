@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script:700|Raleway:400,500');
 
 // Typo / Sizes
-// TODO: clean up what you don't use
 
 $font-size-xxsmall:  10px !default;
 $font-size-xsmall:   12px !default;
@@ -61,7 +60,6 @@ $color-white-transparent: rgba(255, 255, 255, $half-transparent) !default;
 $color-white-opaque:      rgba(255, 255, 255, 0.7) !default;
 
 
-
 // Gutters & Block heights - Need some list of rules otherwise no consistency
 
 $gutter-small:   10px !default;
@@ -70,6 +68,7 @@ $gutter-big:     30px !default;
 
 $small-block-height:   $gutter-big !default;
 $default-block-height: 40px !default;
+$map-height: 320px !default;
 
 $fab-size-default: $default-block-height !default;
 
@@ -82,8 +81,9 @@ $border-width-thin: 1px !default;
 $border-width-default: 2px !default;
 $border-width-thick: $gutter-small !default;
 
-$animation-time-default: 200ms !default;
-$animation-time-slow:    500ms !default;
+$animation-time-default:  200ms !default;
+$animation-time-slow:     500ms !default;
+$animation-time-real-slow:  3s  !default;
 $animation-linear-default: $animation-time-default linear !default;
 $animation-linear-slow: $animation-time-slow linear !default;
 $animation-ease-default: $animation-time-default ease !default;
@@ -98,3 +98,11 @@ $horizontal-panel-box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.14);
 // Panel widths
 $nav-panel-width: 200px !default;
 $horizontal-panel-height: 60px !default;
+
+
+// Z-index levels
+$z-index-level-1: 10 !default;
+
+
+// Grid
+$grid-columns: 12 !default;

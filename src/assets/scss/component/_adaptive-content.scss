@@ -40,7 +40,7 @@
 		// 50:50 layout
 		.large-6 {
 			.image-container {
-				max-height: 320px; // gmap height
+				max-height: $map-height;
 				overflow: hidden;
 			}
 

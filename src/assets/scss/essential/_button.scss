@@ -6,7 +6,7 @@
 	display: block;
 	width: $fab-size-default;
 	height: $fab-size-default;
-	z-index: 10;
+	z-index: $z-index-level-1;
 
 	cursor: pointer; // for desktop at least
 	border-radius: 50%;
@@ -19,7 +19,7 @@
 	display: inline-block;
 	height: $default-block-height;
 	line-height: $default-block-height;
-	padding: 0 12px;
+	padding: 0 $gutter-small;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;

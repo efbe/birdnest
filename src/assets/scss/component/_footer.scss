@@ -11,7 +11,7 @@ footer {
 	height: $footer-height;
 	width: 100%;
 	line-height: $footer-height;
-	z-index: 10;
+	z-index: $z-index-level-1;
 	padding: 0 $gutter-small;
 
 	text-align: right;
@@ -27,7 +27,7 @@ footer {
 	}
 
 	.button {
-		margin-top: 10px;
+		margin-top: $gutter-small;
 		float: right;
 	}
 }

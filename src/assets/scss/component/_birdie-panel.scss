@@ -42,7 +42,7 @@
 @media screen and (min-width: $breakpoint-desktop) {
 	.birdie-wrapper {
 		border-top: 0;
-		border-right-width: 30px;
+		border-right-width: $gutter-big;
 
 		&.map-container {
 			border-right-width: $border-width-thick;

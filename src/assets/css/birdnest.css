@@ -180,7 +180,7 @@ strong {
   display: inline-block;
   height: 40px;
   line-height: 40px;
-  padding: 0 12px;
+  padding: 0 10px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -223,7 +223,7 @@ body {
   padding-bottom: 60px; }
 
 .home-button {
-  position: fixed;
+  position: absolute;
   top: 10px;
   left: 10px; }
 
@@ -254,6 +254,9 @@ body {
     position: absolute;
     left: 20px;
     box-shadow: none; } }
+
+html {
+  overflow-x: hidden; }
 
 body {
   overflow: hidden;

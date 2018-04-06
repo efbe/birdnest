@@ -2,10 +2,10 @@
 // styles for vue-carousel plugin
 // awesome markup!
 
-$dot-size: 20px !default;
+$dot-size: round($default-block-height / 2) !default;
 
 .VueCarousel {
-	border-bottom: 30px solid $color-white; // slot for bottom nav
+	border-bottom: $gutter-big solid $color-white; // slot for bottom nav
 	background-color: $color-white; // in case the width cannot be computed pixel perfectly
 
 	> div {
@@ -23,8 +23,8 @@ $dot-size: 20px !default;
 	// reset everything for the pagination
 	&-pagination {
 		position: absolute;
-		bottom: -40px; // magic number
-		height: 40px;
+		bottom: -($default-block-height);
+		height: $default-block-height;
 		max-height: none;
 		text-align: right !important;
 	}
@@ -78,7 +78,7 @@ $dot-size: 20px !default;
 			transition: height $animation-ease-slow;
 
 			.button {
-				margin: 10px;
+				margin: $gutter-small;
 			}
 		}
 
@@ -95,7 +95,7 @@ $dot-size: 20px !default;
 		&-pagination {
 			top: $gutter-small;
 			bottom: auto; // reset
-			right: -30px;
+			right: -($gutter-big);
 			height: auto;
 		}
 

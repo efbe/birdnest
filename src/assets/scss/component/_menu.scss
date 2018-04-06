@@ -2,6 +2,10 @@
 
 
 // body & content parts that are only required for the slide layout
+html {
+	overflow-x: hidden; // this will prevent the drag of the whole app
+}
+
 body {
 	overflow: hidden;
 	overflow-y: auto;

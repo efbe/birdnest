@@ -3,7 +3,8 @@
     <footer role="banner" class="clear">
         <p class="desktop-only">You can book the Birdnest anytime of the year.</p>
 
-        <a class="button" href="#">Request to book</a>
+        <!-- TODO: add proper action here -->
+        <router-link class="button" to="/">Request to book</router-link>
     </footer>
 
 </template>

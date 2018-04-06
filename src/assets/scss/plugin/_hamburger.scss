@@ -2,26 +2,28 @@
 // really minimal hamburger component
 // TODO: add some inner box shadow for the bars
 
+$hamburger-level-height: 4px !default;
+
 .hamburger {
 	i {
 		background-color: $color-light-blue;
 		border-radius: $border-radius;
 		content: ' ';
 		display: block;
-		width: 20px;
-		height: 4px;
+		width: ($default-block-height / 2);
+		height: $hamburger-level-height;
 		margin: 0 auto;
 	}
 
 	i:nth-child(2) {
-		margin-top: 4px;
-		margin-bottom: 4px;
+		margin-top: $hamburger-level-height;
+		margin-bottom: $hamburger-level-height;
 	}
 }
 
 // FAB plugin
 .fab {
 	i:nth-child(1) {
-		margin-top: 10px;
+		margin-top: $gutter-small;
 	}
 }

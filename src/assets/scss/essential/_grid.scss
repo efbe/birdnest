@@ -3,8 +3,6 @@
 // and by simple I mean the gutters will be handled by the enclosed elements
 // not the grid itself
 
-$grid-count: 12 !default;
-
 .row {
 	display: flex; // why not?...
 	@include clear();
@@ -15,13 +13,13 @@ $grid-count: 12 !default;
 	min-height: 1px;
 
 	// default col widths (bigger than mobile handheld)
-	&.large-2  { width: percentage(2 / $grid-count); }
-	&.large-3  { width: percentage(3 / $grid-count); }
-	&.large-4  { width: percentage(4 / $grid-count); }
-	&.large-6  { width: percentage(6 / $grid-count); }
-	&.large-8  { width: percentage(8 / $grid-count); }
-	&.large-9  { width: percentage(9 / $grid-count); }
-	&.large-10 { width: percentage(10 / $grid-count); }
+	&.large-2  { width: percentage(2 / $grid-columns); }
+	&.large-3  { width: percentage(3 / $grid-columns); }
+	&.large-4  { width: percentage(4 / $grid-columns); }
+	&.large-6  { width: percentage(6 / $grid-columns); }
+	&.large-8  { width: percentage(8 / $grid-columns); }
+	&.large-9  { width: percentage(9 / $grid-columns); }
+	&.large-10 { width: percentage(10 / $grid-columns); }
 	&.large-12 {
 		float: none;
 		width: 100%;
@@ -32,9 +30,9 @@ $grid-count: 12 !default;
 // Tablet
 @media screen and (max-width: $breakpoint-desktop-only) {
 	.col {
-		&.small-4  { width: percentage(4 / $grid-count); }
-		&.small-6  { width: percentage(6 / $grid-count); }
-		&.small-8  { width: percentage(8 / $grid-count); }
+		&.small-4  { width: percentage(4 / $grid-columns); }
+		&.small-6  { width: percentage(6 / $grid-columns); }
+		&.small-8  { width: percentage(8 / $grid-columns); }
 		&.small-12 {
 			float: none;
 			width: 100%;
