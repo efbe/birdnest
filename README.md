@@ -7,7 +7,7 @@
 
 ## Why?
 
-I was curious about the fuzz around Vue so I decided to build something with it and as we needed a very lightweight page for our Airbnb crib so I guess that's what people call two birds with one stone.
+I was curious about the fuzz around Vue so I decided to build something with it and as we needed a very lightweight page for our Airbnb crib I linked the two things together. I guess that's what people call two birds with one stone
 
 I also wanted to make a small app from scratch that is useful for a real life family with a kid unlike Airbnb's "Experiences".
 
