@@ -7,9 +7,10 @@
 
 ## Why?
 
-I was curious about the fuzz around Vue so I decided to build something with it. We also needed a very lightweight page for our Airbnb crib so I guess that's what people call two birds with one stone.
+I was curious about the fuzz around Vue so I decided to build something with it and as we needed a very lightweight page for our Airbnb crib so I guess that's what people call two birds with one stone.
 
-I also wanted to make a small app that is useful for a real life family with a kid unlike Airbnb's "Experiences".
+I also wanted to make a small app from scratch that is useful for a real life family with a kid unlike Airbnb's "Experiences".
+
 
 ## Above...
 
@@ -18,6 +19,7 @@ Airbnb's minimal theme seems convenient enough for such a project so I stuck wit
 Because the emphasis is on the images and the whole project follows the mobile-first philosophy I popped in the [Vue carousel](https://github.com/SSENSE/vue-carousel) courtesy of SSENSE.
 
 The bird logo is coming from our wallpaper. I hope the designer won't find out!
+
 
 ## ...and under the hood
 
@@ -32,6 +34,7 @@ The [Scoped component SASS](https://vuejsfeed.com/blog/using-sass-scss-with-vue-
 
 Ah yeah I made a very very small responsive grid "system" (haha) because [bloated framework grids](https://github.com/twbs/bootstrap/blob/v4-dev/dist/css/bootstrap-grid.css) are just getting ridiculous. No gutters, no unused configurations for handheld devices, just a few columns. It's [less than 60 lines](https://github.com/efbe/birdnest/blob/master/src/assets/scss/essential/_grid.scss) including the header of the file.
 
+
 ## How to setup for development
 ### Regular npm stuff
 
@@ -45,6 +48,7 @@ npm run dev
 # build for production with minification (goes to "dist" directory)
 npm run build
 ```
+
 
 ### Maintain SASS modules
 
@@ -67,6 +71,7 @@ npm run build
 ``` bash
 gulp build-sass
 ```
+
 
 ## Known bugs &amp; TODOs
 
