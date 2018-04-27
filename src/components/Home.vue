@@ -24,26 +24,38 @@
                 :autoplayHoverPause="true">
                 <slide>
                   <picture>
-                    <source srcset="/static/images/01.jpg" media="(min-width: 420px)" />
-                    <img src="/static/images/01_small.jpg" alt="" />
+                    <source srcset="/static/images/apartment/01.jpg" media="(min-width: 420px)" />
+                    <img src="/static/images/apartment/01_small.jpg" alt="Birdnest couch" />
                   </picture>
                 </slide>
                 <slide>
                   <picture>
-                    <source srcset="/static/images/02.jpg" media="(min-width: 420px)" />
-                    <img src="/static/images/02_small.jpg" alt="" />
+                    <source srcset="/static/images/apartment/02.jpg" media="(min-width: 420px)" />
+                    <img src="/static/images/apartment/02_small.jpg" alt="Birdnest bed" />
                   </picture>
                 </slide>
                 <slide>
                   <picture>
-                    <source srcset="/static/images/03.jpg" media="(min-width: 420px)" />
-                    <img src="/static/images/03_small.jpg" alt="" />
+                    <source srcset="/static/images/apartment/03.jpg" media="(min-width: 420px)" />
+                    <img src="/static/images/apartment/03_small.jpg" alt="Birdnest kids' bed" />
                   </picture>
                 </slide>
                 <slide>
                   <picture>
-                    <source srcset="/static/images/04.jpg" media="(min-width: 420px)" />
-                    <img src="/static/images/04_small.jpg" alt="" />
+                    <source srcset="/static/images/apartment/04.jpg" media="(min-width: 420px)" />
+                    <img src="/static/images/apartment/04_small.jpg" alt="Birdnest kitchen" />
+                  </picture>
+                </slide>
+                <slide>
+                  <picture>
+                    <source srcset="/static/images/apartment/05.jpg" media="(min-width: 420px)" />
+                    <img src="/static/images/apartment/05_small.jpg" alt="Birdnest dining table" />
+                  </picture>
+                </slide>
+                <slide>
+                  <picture>
+                    <source srcset="/static/images/apartment/06.jpg" media="(min-width: 420px)" />
+                    <img src="/static/images/apartment/06_small.jpg" alt="Birdnest hallway" />
                   </picture>
                 </slide>
               </carousel>

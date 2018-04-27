@@ -3,10 +3,11 @@ import Router from 'vue-router';
 
 // Lazy loading components
 // see: https://router.vuejs.org/en/advanced/lazy-loading.html
-const Home  = ()   => import('@/components/Home');
-const About = ()   => import('@/components/About');
-const Contact = () => import('@/components/Contact');
-const Nearby = ()  => import('@/components/Nearby');
+const Home  = ()    => import('@/components/Home');
+const About = ()    => import('@/components/About');
+const Contact = ()  => import('@/components/Contact');
+const Nearby = ()   => import('@/components/Nearby');
+const NotFound = () => import('@/components/NotFound');
 
 Vue.use(Router)
 
@@ -18,6 +19,7 @@ export default new Router({
     { path: '/', component: Home },
     { path: '/about', component: About },
     { path: '/contact', component: Contact },
-    { path: '/nearby', component: Nearby }
+    { path: '/nearby', component: Nearby },
+    { path: '*', component: NotFound }
   ]
 })

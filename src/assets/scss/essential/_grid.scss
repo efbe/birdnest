@@ -12,7 +12,7 @@
 	float: left;
 	min-height: 1px;
 
-	// default col widths (bigger than mobile handheld)
+	// default col widths (bigger than mobile/handheld)
 	&.large-2  { width: percentage(2 / $grid-columns); }
 	&.large-3  { width: percentage(3 / $grid-columns); }
 	&.large-4  { width: percentage(4 / $grid-columns); }

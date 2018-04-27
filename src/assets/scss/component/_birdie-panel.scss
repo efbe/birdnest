@@ -4,6 +4,13 @@
 	border: $border-width-thick solid $color-white;
 }
 
+// content after the mobile textbox
+.handheld-textbox {
+	+ .birdie-wrapper {
+		border-top: 0;
+	}
+}
+
 .birdie-panel {
 	border-right: $border-width-thick solid $color-white;
 	background-size: 59%; // fine tune bird position

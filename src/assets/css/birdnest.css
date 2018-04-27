@@ -463,6 +463,9 @@ footer {
 .birdie-wrapper {
   border: 10px solid white; }
 
+.handheld-textbox + .birdie-wrapper {
+  border-top: 0; }
+
 .birdie-panel {
   border-right: 10px solid white;
   background-size: 59%;
@@ -513,21 +516,22 @@ footer {
     height: auto; }
 
 @media screen and (min-width: 40em) {
+  .adaptive-content .row-gutter {
+    margin-left: -10px;
+    margin-right: -10px; }
   .adaptive-content .large-6 .image-container {
     max-height: 320px;
     overflow: hidden; }
   .adaptive-content .large-6:first-of-type .image-container {
-    margin-right: 5px;
-    margin-bottom: 10px; }
+    margin-right: 10px;
+    margin-bottom: 20px; }
   .adaptive-content .large-6:last-of-type .image-container {
-    margin-bottom: 10px;
-    margin-left: 5px; }
-  .adaptive-content .large-12 {
-    display: flex;
-    margin: -5px; }
-    .adaptive-content .large-12 .image-container {
-      margin: 5px;
-      margin-bottom: 10px; } }
+    margin-bottom: 20px;
+    margin-left: 10px; }
+  .adaptive-content .large-4 .image-container {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px; } }
 
 @media screen and (max-width: 39.9375em) {
   .adaptive-content {

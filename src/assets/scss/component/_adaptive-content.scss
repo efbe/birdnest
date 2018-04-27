@@ -37,6 +37,15 @@
 // Tablet...
 @media screen and (min-width: $breakpoint-mobile) {
 	.adaptive-content {
+		// Need this for the 33:33:33 layout
+		// I don't use $gutter-small intentionally because in the future it could be
+		// anything other than the half of $gutter-default
+		// Also it can go to _grids.css in the future if anything other will use it
+		.row-gutter {
+			margin-left: -($gutter-default / 2);
+			margin-right: -($gutter-default / 2);
+		}
+
 		// 50:50 layout
 		.large-6 {
 			.image-container {
@@ -46,27 +55,25 @@
 
 			&:first-of-type {
 				.image-container {
-					margin-right: ($gutter-small / 2);
-					margin-bottom: $gutter-small;
+					margin-right: $gutter-small;
+					margin-bottom: $gutter-default;
 				}
 			}
 
 			&:last-of-type {
 				.image-container {
-					margin-bottom: $gutter-small;
-					margin-left: ($gutter-small / 2);
+					margin-bottom: $gutter-default;
+					margin-left: $gutter-small;
 				}
 			}
 		}
 
 		// 33:33:33 layout
-		.large-12 {
-			display: flex;
-			margin: 0 -($gutter-small / 2);
-
+		.large-4 {
 			.image-container {
-				margin: ($gutter-small / 2);
-				margin-bottom: $gutter-small;
+				margin-left: $gutter-small;
+				margin-right: $gutter-small;
+				margin-bottom: $gutter-default;
 			}
 		}
 	}
