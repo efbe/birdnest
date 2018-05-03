@@ -400,7 +400,7 @@ footer {
 .VueCarousel {
   border-bottom: 30px solid white;
   background-color: white; }
-  .VueCarousel > div {
+  .VueCarousel .VueCarousel-wrapper {
     max-height: 500px;
     overflow: hidden; }
   .VueCarousel-slide img {
@@ -411,16 +411,18 @@ footer {
     position: absolute;
     bottom: -40px;
     height: 40px;
-    max-height: none;
     text-align: right !important; }
   .VueCarousel-dot {
-    margin-top: 0 !important; }
-  .VueCarousel-dot-inner {
-    width: 20px !important;
-    height: 20px !important;
+    margin-top: 0 !important;
+    line-height: 0; }
+  .VueCarousel-dot-button {
     background-color: white !important;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2); }
-  .VueCarousel-dot--active .VueCarousel-dot-inner {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    width: 20px !important;
+    height: 20px !important; }
+    .VueCarousel-dot-button:focus {
+      outline: none !important; }
+  .VueCarousel-dot--active .VueCarousel-dot-button {
     background-color: #3d6f99 !important; }
 
 .carousel-content {
@@ -454,9 +456,10 @@ footer {
       right: -30px;
       height: auto; }
     .VueCarousel-dot {
+      display: block !important;
       float: none !important;
       padding-bottom: 5px !important; }
-    .VueCarousel-dot-inner {
+    .VueCarousel-dot-button {
       width: 10px !important;
       height: 10px !important; } }
 

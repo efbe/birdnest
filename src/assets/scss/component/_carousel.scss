@@ -1,6 +1,7 @@
 // carousel app
 // styles for vue-carousel plugin
 // awesome markup!
+// Don't forget to update with the NPM package as well!
 
 $dot-size: round($default-block-height / 2) !default;
 
@@ -8,7 +9,7 @@ $dot-size: round($default-block-height / 2) !default;
 	border-bottom: $gutter-big solid $color-white; // slot for bottom nav
 	background-color: $color-white; // in case the width cannot be computed pixel perfectly
 
-	> div {
+	.VueCarousel-wrapper {
 		max-height: 500px; // need a proper height for flexbox
 		overflow: hidden; // hide other images
 	}
@@ -25,24 +26,28 @@ $dot-size: round($default-block-height / 2) !default;
 		position: absolute;
 		bottom: -($default-block-height);
 		height: $default-block-height;
-		max-height: none;
 		text-align: right !important;
 	}
 
 	// I rather style this from css w/ !important than inline
 	&-dot {
 		margin-top: 0 !important;
+		line-height: 0; // <ul><li> reset
 	}
 
-	&-dot-inner {
-		width: $dot-size !important;
-		height: $dot-size !important;
+	&-dot-button {
 		background-color: $color-white !important;
 		box-shadow: $floating-action-box-shadow;
+		width: $dot-size !important;
+		height: $dot-size !important;
+
+		&:focus {
+			outline: none !important;
+		}
 	}
 
 	&-dot--active {
-		.VueCarousel-dot-inner {
+		.VueCarousel-dot-button {
 			background-color: $color-dark-blue !important;
 		}
 	}
@@ -100,11 +105,12 @@ $dot-size: round($default-block-height / 2) !default;
 		}
 
 		&-dot {
+			display: block !important;
 			float: none !important;
 			padding-bottom: ($dot-size / 4) !important;
 		}
 
-		&-dot-inner {
+		&-dot-button {
 			width: ($dot-size / 2) !important;
 			height: ($dot-size / 2) !important;
 		}

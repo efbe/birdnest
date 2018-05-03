@@ -51,8 +51,8 @@
                         <div class="col large-4 mini-12">
                             <div class="image-container">
                                 <picture>
-                                    <source srcset="/static/images/nearby/olimpia_04.jpg" media="(min-width: 420px)" />
-                                    <img src="/static/images/nearby/olimpia_04_small.jpg" alt="Basketball court of Olimpia park" />
+                                    <source srcset="/static/images/nearby/fragola.jpg" media="(min-width: 420px)" />
+                                    <img src="/static/images/nearby/fragola_small.jpg" alt="Fragola" />
                                 </picture>
                             </div>
                         </div>
