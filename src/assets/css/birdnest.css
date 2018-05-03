@@ -511,9 +511,6 @@ footer {
       font-size: 14px; }
   .adaptive-content article {
     padding-bottom: 30px; }
-  .adaptive-content .image-container-small {
-    margin-left: 10px;
-    margin-bottom: 10px; }
   .adaptive-content img {
     width: 100%;
     height: auto; }
@@ -532,8 +529,12 @@ footer {
     margin-bottom: 20px;
     margin-left: 10px; }
   .adaptive-content .large-4 .image-container {
-    margin-left: 10px;
     margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px; }
+  .adaptive-content .large-4 .image-container-small {
+    margin-right: 0;
+    margin-left: 20px;
     margin-bottom: 20px; } }
 
 @media screen and (max-width: 39.9375em) {

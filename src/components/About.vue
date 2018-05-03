@@ -20,7 +20,7 @@
                             <div class="image-container">
                                 <picture>
                                     <source srcset="/static/images/apartment/02.jpg" media="(min-width: 420px)" />
-                                    <img src="/static/images/apartment/01_small.jpg" alt="" />
+                                    <img src="/static/images/apartment/02_small.jpg" alt="" />
                                 </picture>
                             </div>
                         </div>
@@ -62,7 +62,7 @@
                             <div class="image-container">
                                 <picture>
                                     <source srcset="/static/images/apartment/01.jpg" media="(min-width: 420px)" />
-                                    <img src="/static/images/apartment/01.jpg" alt="" />
+                                    <img src="/static/images/apartment/01_small.jpg" alt="" />
                                 </picture>
                             </div>
                         </div>
@@ -112,7 +112,7 @@
                             <div class="image-container">
                                 <picture>
                                     <source srcset="/static/images/apartment/06.jpg" media="(min-width: 420px)" />
-                                    <img src="/static/images/apartment/06.jpg" alt="" />
+                                    <img src="/static/images/apartment/06_small.jpg" alt="" />
                                 </picture>
                             </div>
                         </div>
@@ -120,7 +120,7 @@
                             <div class="image-container">
                                 <picture>
                                     <source srcset="/static/images/apartment/05.jpg" media="(min-width: 420px)" />
-                                    <img src="/static/images/apartment/05.jpg" alt="" />
+                                    <img src="/static/images/apartment/05_small.jpg" alt="" />
                                 </picture>
                             </div>
                         </div>

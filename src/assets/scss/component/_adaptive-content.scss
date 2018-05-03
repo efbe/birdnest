@@ -24,11 +24,6 @@
 		padding-bottom: $gutter-big;
 	}
 
-	.image-container-small {
-		margin-left: $gutter-small;
-		margin-bottom: $gutter-small;
-	}
-
 	img {
 		@include stretch-image();
 	}
@@ -71,8 +66,14 @@
 		// 33:33:33 layout
 		.large-4 {
 			.image-container {
-				margin-left: $gutter-small;
 				margin-right: $gutter-small;
+				margin-bottom: $gutter-default;
+				margin-left: $gutter-small;
+			}
+
+			.image-container-small {
+				margin-right: 0;
+				margin-left: $gutter-default;
 				margin-bottom: $gutter-default;
 			}
 		}
