@@ -24,8 +24,8 @@
                         <div class="col large-6 mini-12">
                             <div class="image-container">
                                 <picture>
-                                    <source srcset="/static/images/nearby/olimpia_01.jpg" media="(min-width: 420px)" />
-                                    <img src="/static/images/nearby/olimpia_01_small.jpg" alt="Olimpia park" />
+                                    <source srcset="/static/images/nearby/ujlipot_01.jpg" media="(min-width: 420px)" />
+                                    <img src="/static/images/nearby/ujlipot_01_small.jpg" alt="Újlipótváros" />
                                 </picture>
                             </div>
                         </div>
@@ -35,24 +35,43 @@
                         <div class="col large-4 mini-12">
                             <div class="image-container">
                                 <picture>
-                                    <source srcset="/static/images/nearby/ujlipotvaros_panini.jpg" media="(min-width: 420px)" />
-                                    <img src="/static/images/nearby/ujlipotvaros_panini_small.jpg" alt="Café Panini" />
+                                    <source srcset="/static/images/nearby/babka.jpg" media="(min-width: 420px)" />
+                                    <img src="/static/images/nearby/babka_small.jpg" alt="Babka" />
                                 </picture>
                             </div>
                         </div>
                         <div class="col large-4 mini-12">
                             <div class="image-container">
                                 <picture>
-                                    <source srcset="/static/images/nearby/olimpia_03.jpg" media="(min-width: 420px)" />
-                                    <img src="/static/images/nearby/olimpia_03_small.jpg" alt="Guys playing frisbee in Olimpia park" />
+                                    <source srcset="/static/images/nearby/osho.jpg" media="(min-width: 420px)" />
+                                    <img src="/static/images/nearby/osho_small.jpg" alt="Oriental Soup House" />
                                 </picture>
                             </div>
                         </div>
                         <div class="col large-4 mini-12">
+                            <div class="image-container">
+                                <picture>
+                                    <source srcset="/static/images/nearby/panini.jpg" media="(min-width: 420px)" />
+                                    <img src="/static/images/nearby/panini_small.jpg" alt="Café Panini" />
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col large-6 mini-12">
                             <div class="image-container">
                                 <picture>
                                     <source srcset="/static/images/nearby/fragola.jpg" media="(min-width: 420px)" />
                                     <img src="/static/images/nearby/fragola_small.jpg" alt="Fragola" />
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="col large-6 mini-12">
+                            <div class="image-container">
+                                <picture>
+                                    <source srcset="/static/images/nearby/ujlipot_02.jpg" media="(min-width: 420px)" />
+                                    <img src="/static/images/nearby/ujlipot_02_small.jpg" alt="Újlipótváros" />
                                 </picture>
                             </div>
                         </div>
